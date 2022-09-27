@@ -13,7 +13,16 @@ import {
 })
 export class LoginPage implements OnInit {
 
-  constructor() { }
+  formularioLogin: FormGroup; 
+
+  constructor(public fb: FormBuilder) {
+
+    this.formularioLogin = this.fb.group({
+      'usuario': new FormControl("",Validators.required),
+      'password': new FormControl("",Validators.required)
+    })
+
+   }
 
   ngOnInit() {
   }
