@@ -1,3 +1,55 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu menuId="main-menu" contentId="main">
+    <ion-content>
+      <div class="menu-header-bg"></div>
+      <div class="header-content">
+        <img src="../assets/icon/147144.png" alt="">
+        <ion-label>
+          <h2>Francisco Rojas</h2>
+          <p>Ingenieria en informatica</p>
+        </ion-label>
+      </div>
+      <div class="action-button">
+        <ion-button>
+          <ion-icon slot="start" name="add"></ion-icon>Editar perfil
+        </ion-button>
+      </div>
+      <ion-list  class="list" lines="none"> 
+        <ion-button>
+        <ion-item>
+          <ion-icon name="pie-chart-outline"></ion-icon>Pedir Viaje
+        </ion-item>
+
+      </ion-button>
+      <a href="map">
+      <ion-button>
+        <ion-item>
+          <ion-icon name="pie-chart-outline"></ion-icon>Ver Mapa
+        </ion-item>
+      </ion-button>
+    </a>
+      <ion-button>
+        <ion-item>
+          <ion-icon name="pie-chart-outline"></ion-icon>Conductores
+        </ion-item>
+      </ion-button>
+      <ion-button>
+        <ion-item>
+          <ion-icon name="pie-chart-outline"></ion-icon>Acerca de..
+        </ion-item>
+      </ion-button>
+      <ion-button>
+        <ion-item>
+          <ion-icon name="pie-chart-outline"></ion-icon>Ayuda
+        </ion-item>
+
+      </ion-button>
+      <h1>Modo Conductor</h1>
+      <ion-toggle color="success">
+        
+      </ion-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>

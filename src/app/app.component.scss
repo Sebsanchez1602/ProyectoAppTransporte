@@ -1,0 +1,81 @@
+* {
+    font-family: lato;
+}
+
+.menu-header-bg {
+    height: 180px;
+    width: 350px;
+    background-color: rgb(139, 192, 139);
+    box-shadow: 0px 1px 10px rgb(241, 93, 93);
+   
+    
+}
+
+.header-content {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        border: 1px solid rgb(255, 0, 0);
+    }
+    h2 {
+        font-weight: 400;
+        color: white;
+       
+    }
+    p {
+        font-size: 10px;
+        color: white;
+        font-weight: 100;
+        letter-spacing: 0.4px;
+        
+
+
+    }
+}
+.action-button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    ion-button {
+        text-transform: capitalize;
+        font-weight: 300;
+    
+    }
+}
+
+.list {
+    align-items: center;
+
+
+    ion-button {
+        align-items: center;
+    }
+}
+
+.mode {
+    
+    text-align: center;
+
+    position: absolute;
+   
+    width: 100%;
+}
+h1 {
+    color: rgb(255, 255, 255);
+    text-shadow: rebeccapurple 1px 1px;
+    text-align: center;
+    background-color: red;
+}
+
+ion-toggle {
+    left: 0px;
+    right: 0px;
+}

@@ -1,27 +1,48 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+ 
+  <ion-toolbar style="color: rgb(0, 0, 0) ;">
     <ion-title>
-      Proyecto Transporte
+      TeLlevoApp
     </ion-title>
+    <div class="ini">
+      <a href="login">
+      <ion-icon name="person-circle-outline"></ion-icon>
+    </a>
+    </div>
+
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+
+    
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  
-  <a href="login">
-    <ion-button expand="block">Iniciar Sesion</ion-button>
-  </a>
-  <a href="registro">
-    <ion-button expand="full">Registrarse</ion-button>
-  </a>
-  
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-content [fullscreen]="true" class="background">
+  <div #map id="map"></div>
+<ion-toolbar >
+</ion-toolbar>
+<div class="movp">
+
+<ion-button color="secondary">Movilizacion</ion-button>
+</div>
+<div class="movp2">
+<ion-button>Sin movilizacion</ion-button>
+</div>
+
+
+<div class="pedir" style="text-align: center;"> 
+<ion-button color="success">
+  Pedir Viaje
+</ion-button>
+</div>
+
+
+  <footer class="footer bg-inverse text-center">
+    <div class="container">
+      <p class="text-white">
+        &copy; Equipo Hub
+      </p>
+    </div>
+  </footer>
 </ion-content>

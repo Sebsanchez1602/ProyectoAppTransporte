@@ -11,14 +11,6 @@
       <ion-input type="text" required></ion-input>
     </ion-item>
     <ion-item lines="full">
-      <ion-label position="floating">Apellido</ion-label>
-      <ion-input type="text" required></ion-input>
-    </ion-item>
-    <ion-item lines="full">
-      <ion-label position="floating">Email</ion-label>
-      <ion-input type="text" required></ion-input>
-    </ion-item>
-    <ion-item lines="full">
       <ion-label position="floating">Contraseña</ion-label>
       <ion-input type="password" required></ion-input>
     </ion-item>
@@ -28,9 +20,10 @@
     </ion-item>
     <ion-row>
       <ion-col>
-        <a href="home">
-          <ion-button type="submit" color="danger" expand="block">Registrarse</ion-button>
-        </a>
+        
+          <ion-button (click)="guardar()">Registrarse
+          </ion-button>
+        
       </ion-col>
     </ion-row>
   </form>

@@ -1,3 +1,30 @@
+#map {
+  height: 100%;
+}
+
+ion-toolbar{
+  background-color: var(--ion-color-micolor);
+}
+.footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  background-color: black;
+  p {
+    color: white;
+    text-align: center;
+  }
+}
+
+.ini {
+  position:absolute;
+  right: 10px;
+  top: 15px;
+  ion-icon{
+    height: 30px;
+    width: 30px;
+  }
+}
 #container {
   text-align: center;
 
@@ -24,4 +51,33 @@
 
 #container a {
   text-decoration: none;
+}
+
+.pedir {
+  position: absolute;
+  bottom: 90px;
+  width: 100%;
+  
+
+}
+.background {
+  background-color: green;
+}
+
+.movp {
+  position: absolute;
+  bottom: 140px;
+  width: 100%;
+}
+.movp2 {
+  position: absolute;
+  bottom: 140px;
+  left: 145px;
+  width: 100%;
+}
+.inicio{
+  background-color: aqua;
+  ion-toolbar {
+    background-color: aqua;
+  }
 }
