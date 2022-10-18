@@ -31,6 +31,7 @@ export class RegistroPage implements OnInit {
   async guardar(){
     var f = this.formularioRegistro.value;
 
+    
     if(this.formularioRegistro.invalid){
       const alert = await this.alertController.create({
         header: 'Datos incompletos',
@@ -40,6 +41,15 @@ export class RegistroPage implements OnInit {
   
       await alert.present();
       return;
+
+    }else{
+      const alert = await this.alertController.create({
+        header: 'Datos ingresador',
+        message: 'Te has registrado correctamente',
+        buttons: ['Aceptar']
+      });
+      await alert.present();
+      
     }
 
     var usuario = {
