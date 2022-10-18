@@ -14,36 +14,37 @@ import { AlertController } from '@ionic/angular';
 })
 export class LoginPage implements OnInit {
 
-  formularioLogin: FormGroup; 
+  formularioLogin: FormGroup;
 
   constructor(public fb: FormBuilder,
-    public alertController: AlertController) {
+    public alertController: AlertController) { 
 
     this.formularioLogin = this.fb.group({
-      'usuario': new FormControl("",Validators.required),
+      'nombre': new FormControl("",Validators.required),
       'password': new FormControl("",Validators.required)
     })
 
-   }
+  }
 
   ngOnInit() {
   }
-async ingresar(){
-  var f = this.formularioLogin.value;
 
-  var usuario = JSON.parse(localStorage.getItem('usuario'));
+  async ingresar(){
+    var f = this.formularioLogin.value;
 
-  if(usuario.nombre == f.nombre && usuario.password == f.password){
-    console.log('Ingresado');
+    var usuario = JSON.parse(localStorage.getItem('usuario'));
+
+    if(usuario.nombre == f.nombre && usuario.password == f.password){
+      console.log('Ingresado');
+    }else{
+      const alert = await this.alertController.create({
+        header: 'Datos incorrectos',
+        message: 'Los datos que ingresaste son incorrectos.',
+        buttons: ['Aceptar']
+      });
   
-  }else{
-    const alert = await this.alertController.create({
-      header: 'Datos incompletos',
-      message: 'Tienes que llenar todos los datos',
-      buttons: ['Aceptar']
-    });
-
-    await alert.present();
+      await alert.present();
+    }
   }
-}
+
 }
